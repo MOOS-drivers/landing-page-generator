@@ -1,0 +1,10 @@
+modalID: 1
+title: GPS receiver interface
+subtitle: Standard NMEA GPS serial message parser.
+date: 2015-12-04
+img: gps.png
+preview: gps-preview.png
+client: iGPS
+clientLink: "https://github.com/MOOS-drivers/iGPS"
+category: Serial Sensors
+description: Standard NMEA GPS serial message parser. Based on the MOOSSerialPort class.

@@ -1,0 +1,185 @@
+# Site settings
+baseurl = "http://moos-drivers.github.io/"
+languageCode = "en-us"
+title = "MOOS Drivers"
+theme = "hugo-agency-theme"
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) or
+	# most longer texts.
+	#
+	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "MOOS-Drivers"
+	description = "MOOS-Drivers provides drivers and interfaces for sensors for the MOOS (themoos.org) robotics middleware and MOOS-IvP (www.moos-ivp.org) robotic autonomy systems."
+
+	# Since this template is static, the contact form uses www.formspree.io as a
+	# proxy. The form makes a POST request to their servers to send the actual
+	# email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+	email = "ms.ibnseddik@gmail.com"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "MOOS-Drivers"
+		services = "Why MOOS?"
+		portfolio = "Drivers"
+		about = "About"
+		team = "Team"
+		contact = "Contact"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background image of the hero, replace 'header-bg.jpg' in
+		# the 'static/img' folder.
+		title = "Welcome to MOOS-Drivers!"
+		subtitle = "The open repository for all MOOS drivers and interfaces."
+		buttonText = "Get Started"
+
+
+	# Services section
+	[params.services]
+		title = "Why MOOS?"
+		subtitle = "[MOOS](http://themoos.org) (Multi-Objective Operating Suite) is a middleware made for robotics by roboticists."
+
+        [[params.services.row]]
+
+            [[params.services.row.list]]
+                icon = "fa-paper-plane"
+                title = "Light-weight"
+                description = "MOOS is one of the most light-weight middlewares available."
+
+            [[params.services.row.list]]
+                icon = "fa-laptop"
+                title = "Cross-platform"
+                description = "Works on Mac, Windows, and Linux (and embedded)."
+
+            [[params.services.row.list]]
+                icon = "fa-code"
+                title = "Easy to learn"
+                description = "All you need to know is a little `C++` (other language bindings exist)."
+
+	# Portfolio section
+	[params.portfolio]
+		# All projects defined in their own files. You can find example projects
+		# at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+		# at the root of this Hugo site.
+		# For more informtion take a look at the README.
+		title = "Drivers & Interfaces"
+		subtitle = "Get what you need for your next robotic project."
+
+		[params.portfolio.modal]
+            client = "Sensor"
+            date = "Date"
+            category = "Category"
+            buttonText = "Close"
+
+
+    # About section
+	[params.about]
+		title = "About"
+		subtitle = "The history of MOOS drivers."
+		endpoint = "Be part<br>of our<br>story!"
+
+		# The events will be listed from the top to the bottom.
+		# All images are stored under 'static/img/about'.
+		# Replace them with your own.
+		[[params.about.events]]
+			img = "moos.png"
+			date = "2001"
+			title = "MOOS & MOOS-IvP"
+			description = "Back in the days, Paul Newman and Mike Benjamin were two talented PhD students that wanted their code to be reused easily. They created the MOOS (Multi-Objective Operating Suite) middleware and IvP (Interval Programming) autonomy suite."
+
+		[[params.about.events]]
+			img = "moosV10.png"
+			date = "2011"
+			title = "V10"
+			description = "Ten years after the original version, MOOS core gets a refresh with faster performances and added stability. In the benchmark, MOOS beats the most known robotic middlewares."
+
+		[[params.about.events]]
+			img = "moos-drivers.png"
+			date = "December 2015"
+			title = "MOOS-Drivers is born"
+			description = "With an ever increasing number of sensors on today's robots, a one-stop place to get the necessary sensors interface for your next project makes a lot of sense. MOOS-drivers community is created to tackle this particular problem."
+
+
+	# Team section
+	[params.team]
+		title = "Our amazing team"
+		subtitle = "Open-source MOOS-Drivers community."
+		description = "MOOS-Drivers is an open-source community where everybody can create his own interface and contribute to already existing interfaces and drivers."
+
+		# All team member's pictures are stored under 'static/img/team'.
+		# Replace them with your own too.
+		[[params.team.members]]
+			img = "you.png"
+			name = "You!"
+			position = "Roboticist, Enthusiast, Hacker"
+
+	# Client section
+	# All the clients' logos are stored under 'static/img/logos'.
+	# Replace them with your clients's logos.
+	[[params.clients]]
+		logo = "mit.png"
+		link = "http://moos-ivp.org/"
+
+	[[params.clients]]
+		logo = "mrg.png"
+		link = "http://mrg.robots.ox.ac.uk/"
+
+	[[params.clients]]
+		logo = "ensta.png"
+		link = "http://www.ensta-bretagne.fr/"
+
+
+	# Contact section
+	[params.contact]
+		title = "Contact us"
+		subtitle  = "Want help to get started?"
+		buttonText = "Send us message!"
+
+		# 'warning' defines error messages for invalid inputs
+		[params.contact.form.name]
+			text = "Your Name *"
+			warning = "Please enter your name."
+
+		[params.contact.form.email]
+			text = "Your Email *"
+			warning = "Please enter your email address."
+
+		[params.contact.form.phone]
+			text = "Your Phone *"
+			warning = "Please enter your phone number."
+
+		[params.contact.form.message]
+			text = "Your Message *"
+			warning = "Please enter a message."
+
+
+	# Footer section
+	[params.footer]
+		copyright = "Published under the MIT License."
+
+		[[params.footer.social]]
+			icon = "fa-github"
+			link = "https://github.com/MOOS-drivers"
+
+		[[params.footer.quicklinks]]
+			text = "License"
+			link = "http://opensource.org/licenses/MIT"
