@@ -1,7 +1,7 @@
 # Site settings
 baseurl = "http://moos-drivers.github.io/"
 languageCode = "en-us"
-title = "MOOS Drivers"
+title = "MOOS-Drivers"
 theme = "hugo-agency-theme"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
@@ -131,6 +131,9 @@ googleAnalytics = ""
 			img = "you.png"
 			name = "You!"
 			position = "Roboticist, Enthusiast, Hacker"
+			social = [
+				["fa-github", "https://github.com/MOOS-drivers/"]
+			]
 
 	# Client section
 	# All the clients' logos are stored under 'static/img/logos'.
@@ -145,7 +148,7 @@ googleAnalytics = ""
 
 	[[params.clients]]
 		logo = "ensta.png"
-		link = "http://www.ensta-bretagne.fr/"
+		link = "https://github.com/ENSTABretagneRobotics/moos-ivp-enstabretagne"
 
 
 	# Contact section
