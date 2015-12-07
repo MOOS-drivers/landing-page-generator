@@ -182,6 +182,9 @@ googleAnalytics = "UA-71086482-1"
 		[[params.footer.social]]
 			icon = "fa-github"
 			link = "https://github.com/MOOS-drivers"
+		[[params.footer.social]]
+			icon = "fa-twitter"
+			link = "https://twitter.com/moosdrivers"
 
 		[[params.footer.quicklinks]]
 			text = "License"
