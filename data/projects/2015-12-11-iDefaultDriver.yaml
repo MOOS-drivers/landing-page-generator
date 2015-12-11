@@ -1,0 +1,10 @@
+modalID: 2
+title: Default Driver
+subtitle: A base project to help generate drivers.
+date: 2015-12-11
+img: gps.png
+preview: gps-preview.png
+client: iDefaultDriver
+clientLink: "https://github.com/MOOS-drivers/iDefaultDriver"
+category: AppCasting, Driver, Base, Generator
+description: A base project to generate standard MOOS drivers. The scripts will generate all the necessary files and folders to build your own driver. It is based on AppCastingMOOSInstrument.
