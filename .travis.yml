@@ -5,10 +5,11 @@ go:
 
 install: go get -v github.com/spf13/hugo
 
-before_script:
-  - mkdir -p themes
-  - cd themes
-  - git clone --depth 1 https://github.com/digitalcraftsman/hugo-agency-theme
-  - cd .. 
-
 script: hugo
+
+after_success:
+  - cd public
+
+env:
+  global:
+    secure: ulYhTkquU/19oTeQFWueSsbh4XGVeSv5X9Sa1PWbeveglmTbmPKedm4lOBSxoK8c1XzOSpenG3vGin5NOXs2kMco6kfGcl0PWIvJ219igkeVVZGCn4IXNP5a5nKJI4HPACJQq5IdpwtC79hKgkUlWkMKEhfKPY+u73VMcuqQwoWIE54u5mp490U8VcNIzraiFmtEgMVVN0JCit3K1ci3K2nqGO/zl7tiv8Bv36LFqkjF7k/7nu6e/xtYO3RMRCY4yi5p+InCUbU9R9MbIfgc89TtLaxAlu9a0dQyWjAOyrUzKK1Az/w//vRl9tEoZL6xO7oXphlhZH0BEDQkGJXXnDQnjRFyNygGdZd8/6u5KqewL5EPG/GiH4gv9F9A9HLchZ+0f4QLrDgKUM7K1HRyvmaNM/1R4zMlelEIEfh9iKDziyU/esDcnpKW/PJP860Q5JaAnbG+yc1Ngf1LloJUEPzGyGS4zbOKhDN0pUdv/yUcSyhxOD+gdp6O1zGlNFfTUlJPwxFxysJwVi/yIvK/95krPPXaaDx8aaLd5FjfM/Oz90nYupLAVovihzLRq9fHzcouwEZx+TslUa76VwKzPJ8jeFG6/UJepRX/tkEtEEK2uLS+fUvlSCqADu0xWmthLfzdzu41XFNdh8/FDXHnM7hk2NWzf/uLynfUEM+wqJo=
